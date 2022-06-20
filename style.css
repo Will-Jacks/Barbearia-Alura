@@ -17,6 +17,11 @@ nav {
 nav li {
     display: inline-block;
     margin-left: 15px;
+    
+}
+
+nav li:hover {
+    transform: scale(1.1);
 }
 
 nav a{
@@ -32,91 +37,106 @@ nav a:hover {
     text-decoration: underline;
 }
 
-.principal {
-    background-color: #CCCCCC;
-    padding: 30px;
-    font-size: 20px;
+.produtos {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0px;
 }
 
-#banner {
-    width: 100%;
-}
-
-.titulo-centralizado {
-    font-size: 30px;
-    font-weight: bold;
-    text-align: center;
-}
-
-p {
-    text-align: center;
-}
-
-#missao{
-    font-size: 24px;
-}
-em strong {
-    color: #FF0000;
-}
-
-.beneficios {
+.produtos li {
     display: inline-block;
-    margin-top: 200px;
+    text-align: center;
+    width: 30%;
     vertical-align: top;
-    background-color: #CCCCCC;
-    padding: 20px;
-    border: 1px solid black;
-
+    border: 2px solid black;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    /*O box sizing serve pra dizer ao navegador que o cálculo da width 30% serve pra quantidade geral do conteúdo, ou seja, não importa o quanto de padding eu adicione, a porcentagem vai ser calculada com esse padding. Sem o box sizing, vai haver quebra de linha */
+    box-sizing: border-box;
+    border-radius: 5px;
 }
 
-#titulo-beneficios {
+.produtos li:hover {
+    border-color: #C78C19;
+    transform: scale(1.2);
+}
+
+.produtos li:hover h2 {
+    font-size: 34px;
+    color: #C78C19;
+}
+
+.produtos li:active {
+    border-color: green;
+    color: green;
+}
+
+.produtos h2 {
     font-size: 30px;
     font-weight: bold;
-    
 }
 
-.itens {
-    background-color: #CCCCCC;
-    font-style: italic;
-    list-style: disc;
+.descricao-produto {
+    font-size: 18px;
+}
+
+.preco-produto {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer {
+    background-image: url(imagens_produtos/bg.jpg);
+    text-align: center;
+    padding: 40px 0px;
+}
+
+.copyright {
+    color: white;
+    font-size: 13px;
+    margin: 20px 0px;
+}
+
+main {
+    width: 940px;
+    margin: 0 auto;
+}
+
+form {
+    margin: 40px 0px;
+}
+
+form label, form legend {
+    display: block;
+    margin: 10px 0px;
     font-size: 20px;
 }
 
-.imagem-beneficios {
-    position: relative;
-    left: 500px;
+.input-padrao {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px;
     width: 50%;
 }
 
-footer {
-    background-image: url(imagens_produtos/bg.jpg);
-    text-align: center;
-    padding: 40px 0px;
-}
-
-.copyright {
-    color: white;
-    font-size: 13px;
-    margin: 20px 0px;
-}footer {
-    background-image: url(imagens_produtos/bg.jpg);
-    text-align: center;
-    padding: 40px 0px;
-}
-
-.copyright {
-    color: white;
-    font-size: 13px;
+.checkbox {
     margin: 20px 0px;
 }
-footer {
-    background-image: url(imagens_produtos/bg.jpg);
-    text-align: center;
-    padding: 40px 0px;
+
+.botao-enviar {
+    background-color: orange;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    width: 40%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    transition-duration: 0.3s;
 }
 
-.copyright {
-    color: white;
-    font-size: 13px;
-    margin: 20px 0px;
+.botao-enviar:hover {
+    background-color: #C78C19;
+    transform: scale(1.01);
 }
